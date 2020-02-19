@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     LVContacts.setAdapter(adaptor);
                 }else{
 
-                    adaptor = new ContactAdaptor(MainActivity.this, R.layout.contact_format, ContactList, mDBhelper);
-                    LVContacts.setAdapter(adaptor);
+                    getAllData();
+                    
 
                 }
                 return false;
